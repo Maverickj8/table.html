@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading {
+    font-size: 70px;
+    color: white;
+    animation: flicker 1.5s infinite alternate;
+}
+td{
+    color:#270f07;
+    text-align: center;
+    width: 5vw;
+    border: 1px solid white;
+    font-weight: 700;
+    size: 12px;
+}
+.col {
+    border: none;
+}
+.color1{
+    background-image: conic-gradient(#0f46da , rgba(46,159,252,255) );
+}
+.color2 {
+    background-color: rgba(248,188,56,255);
+}
+.color3 {
+    background-image: conic-gradient( #ba2c99, #fd7da8 );
+}
+.color4 {
+    background-image: conic-gradient( #a051f6, #ff41fc );
+}
+.color5 {
+    background-image: conic-gradient( #27b6d7, #77b0e6 );
+}
+.color6 {
+    background-image: conic-gradient( #f7b134, #ff5e21);
+}
+.color7 {
+    background-image: conic-gradient( #0cfb69, #50ff62);
+}
+.color8 {
+    background-image: conic-gradient( #ffc707, #f8f220);
+}
+.color9{
+    background-image: conic-gradient( #bdff00, #c4f868);
+}
+.color10{
+    background-image: conic-gradient( #f90504, #ef73b2);
+}
+@keyframes flicker{
+    0%, 17%, 31%, 50%, 60%, 80%, 100% {
+        text-shadow: 
+        0 0 10px #fff,
+        0 0 20px #0fa,
+        0 0 40px #0fa,
+        0 0 70px #0fa,
+        0 0 110px #0fa,
+        0 0 160px #0fa
+    }
+    20%, 40%, 60%, 80% {
+        text-shadow: none;
+    }
+}
+td:hover{
+    filter: brightness(200%);
+    color: black;
+}
+
